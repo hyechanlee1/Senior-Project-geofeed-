@@ -1,9 +1,16 @@
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    background-color: rgb(211, 211, 211);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+body {
+    background-color: #f8f9fa;
+    line-height: 1.7;
+    color: #2d3436;
+}
+
 nav {
     background-color: #32b4dc;
     color: #fff;
@@ -12,15 +19,18 @@ nav {
     align-items: center;
     padding: 16px;
 }
-nav h3{
+
+nav h3 {
     background-color: #32b4dc;
 }
+
 nav a {
     color: #fff;
     padding: 10px;
     background-color: #32b4dc;
     text-decoration: none;
 }
+
 nav a:hover {
     background-color: #555;
     border-radius: 50%;
@@ -28,18 +38,71 @@ nav a:hover {
 
 /* body styling */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
+
 h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 2.75rem;
+    color: #1e3799;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
+
+h3 {
+    font-size: 1.5rem;
+    color: #2d3436;
+    margin: 2.5rem 0 1rem 0;
+    font-weight: 600;
+}
+
 p {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #636e72;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
 }
+
+ul {
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    color: #636e72;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+li:before {
+    content: "•";
+    color: #1e3799;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+a {
+    color: #1e3799;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    color: #4a69bd;
+    border-bottom: 1px solid #4a69bd;
+    text-decoration: none;
+}
+
 .btn {
     background-color: #333;
     border-radius: 1.5rem;
@@ -47,15 +110,18 @@ p {
     padding: 10px 20px;
     text-decoration: none;
 }
+
 .btn:hover {
     background-color: #555;
 }
+
 .destinations {
     display: flex;
     justify-content: space-between;
     text-align: center;
     margin-top: 40px;
 }
+
 .destination {
     border: 1px solid gray;
     background-color: #ffffff;
@@ -63,17 +129,20 @@ p {
     flex-basis: 30%;
     margin-bottom: 20px;
 }
+
 .destination img {
     border-radius: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 90%;
 }
+
 .destination h3 {
     font-size: 24px;
     background-color: transparent;
     margin-bottom: 10px;
 }
+
 .destination p {
     background-color: transparent;
     font-size: 15px;
@@ -86,6 +155,6 @@ footer {
     text-align: center;
 }
 
-footer p{
+footer p {
     font-size: smaller;
 }
